@@ -418,35 +418,37 @@
         // === INICIALIZACIÓN ===
         renderizarProductos(productosCafe);
 
-        // === MODO OSCURO (TOGGLE) ===
+             // === MODO OSCURO (TOGGLE) ===
         const btnDarkMode = document.getElementById('btn-dark-mode');
         const iconoDarkMode = btnDarkMode.querySelector('i');
 
-        btnDarkMode.addEventListener('click', function() {
+        btnDarkMode.addEventListener('click', function () {
             document.body.classList.toggle('modo-oscuro');
 
             if (document.body.classList.contains('modo-oscuro')) {
                 iconoDarkMode.classList.remove('bi-moon-fill');
                 iconoDarkMode.classList.add('bi-sun-fill');
-                iconoDarkMode.style.color = '#F9F6F0'; 
+                iconoDarkMode.style.color = '#F9F6F0';
             } else {
                 iconoDarkMode.classList.remove('bi-sun-fill');
                 iconoDarkMode.classList.add('bi-moon-fill');
                 iconoDarkMode.style.color = '#2C1E16';
             }
 
-            // === CERRAR MENÚ ===
-        const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
-        const menuNavegacion = document.getElementById('menuNavegacion');
+            // === CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE ===
+            const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
+            const menuNavegacion = document.getElementById('menuNavegacion');
 
-        enlacesMenu.forEach(enlace => {
-            enlace.addEventListener('click', () => {
-                if (menuNavegacion.classList.contains('show')) {
-                    const menuColapsado = bootstrap.Collapse.getOrCreateInstance(menuNavegacion);
-                    menuColapsado.hide();
-                }
+            enlacesMenu.forEach(enlace => {
+                enlace.addEventListener('click', () => {
+                    // Verificamos si el menú está abierto (Bootstrap le pone la clase 'show')
+                    if (menuNavegacion.classList.contains('show')) {
+                        // Usamos la función interna de Bootstrap para ocultarlo suavemente
+                        const menuColapsado = bootstrap.Collapse.getOrCreateInstance(menuNavegacion);
+                        menuColapsado.hide();
+                    }
+                });
             });
-        });
         });
     </script>
     
