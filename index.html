@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Algrano</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand fuente-elegante fs-1" href="#" style="color: #2C1E16;">
+                Café <span class="texto-dorado fst-italic">Algrano</span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false"
+                aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion">
+                <ul class="navbar-nav text-center mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#menu-platillos">MENÚ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#historia">HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#contacto">CONTACTO</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 d-flex align-items-center justify-content-center">
+                        <button id="btn-dark-mode" class="btn btn-sm shadow-none"
+                            style="border: 1px solid #B88655; border-radius: 20px; padding: 5px 15px;">
+                            <i class="bi bi-moon-fill" style="color: #2C1E16;"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--SECCION PRINCIPAL-->
+    <section id="historia" class="py-5" style="background-color: #1A120B; color: #F9F6F0;">
+        <div class="container py-5 text-center">
+
+            <p class="texto-dorado fw-bold mb-3" style="letter-spacing: 2px; font-size: 0.85rem;">
+                — QUIÉNES SOMOS
+            </p>
+
+            <h1 class="fuente-elegante display-4 fw-bold mb-4">
+                Más que café, <br>
+                un <span class="texto-dorado fst-italic">concepto</span> de vida
+            </h1>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead mb-4" style="color: #D3C5B7; font-size: 1.1rem; line-height: 1.8;">
+                        Nacimos de la pasión por conectar personas a través de experiencias sensoriales auténticas.
+                        Somos una cafetería artesanal que honra el origen de cada grano y el trabajo de quienes lo
+                        cultivan.
+                    </p>
+                    <p class="mb-5" style="color: #D3C5B7; font-size: 1.1rem; line-height: 1.8;">
+                        Nuestro espacio fue diseñado para ser un refugio: un lugar donde la comunidad se encuentra, las
+                        ideas fluyen y cada detalle habla de cuidado y calidez.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--GRIDS-->
+    <section class="pb-5" style="background-color: #1A120B; color: #F9F6F0;">
+        <div class="container pb-5">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100 border-0 p-4 shadow-sm"
+                        style="background-color: #261B12; border-radius: 12px;">
+                        <div class="card-body">
+                            <span class="fs-2 mb-3 d-block">🌱</span>
+                            <h3 class="fuente-elegante texto-dorado fs-4 fw-bold mb-3">Origen Honesto</h3>
+                            <p class="mb-0" style="color: #D3C5B7; font-size: 0.95rem; line-height: 1.6;">
+                                Trabajamos directamente con productores locales comprometidos con la sostenibilidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100 border-0 p-4 shadow-sm"
+                        style="background-color: #261B12; border-radius: 12px;">
+                        <div class="card-body">
+                            <span class="fs-2 mb-3 d-block">✨</span>
+                            <h3 class="fuente-elegante texto-dorado fs-4 fw-bold mb-3">Calidad Artesanal</h3>
+                            <p class="mb-0" style="color: #D3C5B7; font-size: 0.95rem; line-height: 1.6;">
+                                Cada preparación es un ritual de precisión y pasión sin atajos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100 border-0 p-4 shadow-sm"
+                        style="background-color: #261B12; border-radius: 12px;">
+                        <div class="card-body">
+                            <span class="fs-2 mb-3 d-block">🤝</span>
+                            <h3 class="fuente-elegante texto-dorado fs-4 fw-bold mb-3">Comunidad</h3>
+                            <p class="mb-0" style="color: #D3C5B7; font-size: 0.95rem; line-height: 1.6;">
+                                Creamos espacios de encuentro auténtico para nuestra comunidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100 border-0 p-4 shadow-sm"
+                        style="background-color: #261B12; border-radius: 12px;">
+                        <div class="card-body">
+                            <span class="fs-2 mb-3 d-block">💚</span>
+                            <h3 class="fuente-elegante texto-dorado fs-4 fw-bold mb-3">Sostenibilidad</h3>
+                            <p class="mb-0" style="color: #D3C5B7; font-size: 0.95rem; line-height: 1.6;">
+                                Comprometidos con prácticas responsables que cuidan el planeta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--MENU-->
+    <section id="menu-platillos" class="py-5" style="background-color: #F9F6F0; color: #2C1E16;">
+        <div class="container py-5">
+
+            <div class="text-center mb-5">
+                <p class="texto-dorado fw-bold mb-3" style="letter-spacing: 2px; font-size: 0.85rem;">
+                    — LO QUE OFRECEMOS
+                </p>
+                <h2 class="fuente-elegante display-5 fw-bold mb-4">
+                    Nuestro <span class="texto-dorado fst-italic">Menú</span>
+                </h2>
+                <p class="mx-auto" style="color: #5A4A3D; font-size: 1.1rem; max-width: 600px;">
+                    Productos frescos, recetas cuidadas y precios que hacen que cada visita valga la pena.
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+                <div class="d-flex justify-content-center flex-wrap gap-3 mb-5" id="contenedor-filtros">
+                    <button class="btn px-4 py-2 fw-bold btn-filtro" data-filtro="todos"
+                        style="border: 1px solid #B88655; color: #B88655; border-radius: 0;">TODOS</button>
+                    <button class="btn px-4 py-2 fw-bold text-muted btn-filtro" data-filtro="calientes"
+                        style="border: none; border-radius: 0;">BEBIDAS CALIENTES</button>
+                    <button class="btn px-4 py-2 fw-bold text-muted btn-filtro" data-filtro="frias"
+                        style="border: none; border-radius: 0;">BEBIDAS FRÍAS</button>
+                    <button class="btn px-4 py-2 fw-bold text-muted btn-filtro" data-filtro="comida"
+                        style="border: none; border-radius: 0;">PARA COMER</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="contenedor-productos"></div>
+
+    </section>
+    <!--CONTACTO-->
+    <section id="contacto" class="py-5" style="background-color: #F9F6F0; color: #2C1E16;">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+
+                <div class="col-lg-6">
+                    <p class="texto-dorado fw-bold mb-3" style="letter-spacing: 2px; font-size: 0.85rem;">
+                        — ESCRÍBENOS
+                    </p>
+                    <h2 class="fuente-elegante display-5 fw-bold mb-4">
+                        ¿Tienes una <br>
+                        <span class="texto-dorado fst-italic">pregunta?</span>
+                    </h2>
+                    <p class="mb-5" style="color: #5A4A3D; font-size: 1.1rem; line-height: 1.8;">
+                        Estamos aquí para ayudarte. Desde reservas y eventos privados hasta consultas sobre nuestros
+                        productos, escríbenos y te respondemos con gusto.
+                    </p>
+
+                    <div class="d-flex mb-4">
+                        <div class="fs-4 me-3">📍</div>
+                        <div>
+                            <h5 class="fw-bold mb-1 fs-6">DIRECCIÓN</h5>
+                            <p class="mb-0" style="color: #5A4A3D;">Isla Canarias Mz 37, Villa Esmeralda, 54910 Fuentes
+                                del Valle, Méx.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="fs-4 me-3">🕒</div>
+                        <div>
+                            <h5 class="fw-bold mb-1 fs-6">HORARIO</h5>
+                            <p class="mb-0" style="color: #5A4A3D;">Lunes–Viernes 7:00–21:00 · Sáb–Dom 8:00–22:00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="fs-4 me-3">✉️</div>
+                        <div>
+                            <h5 class="fw-bold mb-1 fs-6">CORREO</h5>
+                            <p class="mb-0" style="color: #5A4A3D;">hola@cafealgrano.mx</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="fs-4 me-3">📞</div>
+                        <div>
+                            <h5 class="fw-bold mb-1 fs-6">TELÉFONO</h5>
+                            <p class="mb-0" style="color: #5A4A3D;">???</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 bg-white shadow-sm" style="border-radius: 12px;">
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label fw-bold"
+                                    style="font-size: 0.85rem; letter-spacing: 1px; color: #5A4A3D;">NOMBRE</label>
+                                <input type="text"
+                                    class="form-control border-0 border-bottom rounded-0 shadow-none px-0"
+                                    style="background-color: transparent;" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold"
+                                    style="font-size: 0.85rem; letter-spacing: 1px; color: #5A4A3D;">CORREO
+                                    ELECTRÓNICO</label>
+                                <input type="email"
+                                    class="form-control border-0 border-bottom rounded-0 shadow-none px-0"
+                                    style="background-color: transparent;" required>
+                            </div>
+
+                            <div class="mb-5">
+                                <label class="form-label fw-bold"
+                                    style="font-size: 0.85rem; letter-spacing: 1px; color: #5A4A3D;">MENSAJE</label>
+                                <textarea class="form-control border-0 border-bottom rounded-0 shadow-none px-0"
+                                    rows="3" style="background-color: transparent;" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn w-100 py-3 fw-bold text-white"
+                                style="background-color: #261B12; letter-spacing: 1px;">
+                                ENVIAR MENSAJE
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const productosCafe = [
+            {
+                id: 1,
+                nombre: 'Espresso Clásico',
+                descripcion: 'Concentrado de sabor intenso, con cuerpo cremoso y notas de chocolate amargo.',
+                precio: 35,
+                categoria: 'calientes',
+                imagenUrl: 'img/1.webp',
+                etiqueta: 'SIGNATURE'
+            },
+            {
+                id: 2,
+                nombre: 'Cappuccino de Especialidad',
+                descripcion: 'Espresso doble con leche vaporizada en arte latte. Equilibrio perfecto de sabor.',
+                precio: 65,
+                categoria: 'calientes',
+                imagenUrl: 'img/2.webp',
+                etiqueta: ''
+            },
+            {
+                id: 3,
+                nombre: 'Matcha Latte',
+                descripcion: 'Matcha ceremonial de primer grado con leche de avena fría o caliente.',
+                precio: 75,
+                categoria: 'frias',
+                imagenUrl: 'img/3.webp',
+                etiqueta: 'NUEVO'
+            },
+            {
+                id: 4,
+                nombre: 'Croissant de Mantequilla',
+                descripcion: 'Horneado a diario. Crujiente por fuera, suave y laminado por dentro.',
+                precio: 45,
+                categoria: 'comida',
+                imagenUrl: 'img/4.webp',
+                etiqueta: ''
+            },
+            {
+                id: 5,
+                nombre: 'Cold Brew 24h',
+                descripcion: 'Infusión lenta en frío durante 24 horas. Suave, sin acidez, refrescante.',
+                precio: 70,
+                categoria: 'frias',
+                imagenUrl: 'img/5.webp',
+                etiqueta: 'FAVORITO'
+            },
+
+            {
+                id: 6,
+                nombre: 'Frappé de Caramelo',
+                descripcion: 'Mezcla helada de café, leche y caramelo artesanal, coronado con crema batida.',
+                precio: 85,
+                categoria: 'frias',
+                imagenUrl: 'img/6.webp',
+                etiqueta: 'POPULAR'
+            },
+            {
+                id: 7,
+                nombre: 'Panini de Pavo y Queso',
+                descripcion: 'Pan ciabatta tostado con pechuga de pavo, queso provolone y pesto de la casa.',
+                precio: 110,
+                categoria: 'comida',
+                imagenUrl: 'img/7.webp',
+                etiqueta: 'CHEF'
+            },
+            {
+                id: 8,
+                nombre: 'Té Chai Latte',
+                descripcion: 'Infusión de especias de la India con leche vaporizada y un toque de canela.',
+                precio: 60,
+                categoria: 'calientes',
+                imagenUrl: 'img/8.webp',
+                etiqueta: ''
+            },
+            {
+                id: 9,
+                nombre: 'Churro Relleno De Chocolate',
+                descripcion: 'Los churros rellenos de chocolate son un delicioso postre que combina la textura crujiente de los churros con un suave y cremoso relleno de chocolate.',
+                precio: 25,
+                categoria: 'comida',
+                imagenUrl: 'img/9.webp',
+                etiqueta: ''
+            }
+        ];
+
+        const contenedor = document.getElementById('contenedor-productos');
+        const botonesFiltro = document.querySelectorAll('.btn-filtro');
+
+        // === FUNCIÓN PARA "DIBUJAR" LAS TARJETAS ===
+        function renderizarProductos(datos) {
+            
+            contenedor.innerHTML = '';
+
+            if (datos.length === 0) {
+                contenedor.innerHTML = '<div class="col-12 text-center text-muted py-5">Próximamente más delicias en esta categoría...</div>';
+                return;
+            }
+
+            datos.forEach(producto => {
+                const htmlEtiqueta = producto.etiqueta
+                    ? `<span class="badge border text-dark px-3 py-2" style="border-color: #B88655 !important; letter-spacing: 1px; border-radius: 0;">${producto.etiqueta}</span>`
+                    : '';
+
+                // Crea la columna y la tarjeta
+                const columna = document.createElement('div');
+                columna.className = 'col-12 col-md-6 col-lg-4 card-producto-jocho'; 
+
+                columna.innerHTML = `
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <img src="${producto.imagenUrl}" class="card-img-top" alt="${producto.nombre}" style="height: 220px; object-fit: cover;">
+                        
+                        <div class="card-body p-4">
+                            <h4 class="fuente-elegante fw-bold mb-2">${producto.nombre}</h4>
+                            <p style="color: #5A4A3D; font-size: 0.95rem; line-height: 1.5;">${producto.descripcion}</p>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fuente-elegante texto-dorado fs-3 fw-bold">$${producto.precio}</span>
+                                ${htmlEtiqueta}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                contenedor.appendChild(columna);
+            });
+        }
+
+        // === LÓGICA DE FILTRADO ===
+        botonesFiltro.forEach(boton => {
+            boton.addEventListener('click', function () {
+                botonesFiltro.forEach(btn => {
+                    btn.style.border = 'none';
+                    btn.style.color = '#6c757d';
+                    btn.classList.add('text-muted');
+                });
+                this.style.border = '1px solid #B88655';
+                this.style.color = '#B88655';
+                this.classList.remove('text-muted');
+
+                const filtro = this.getAttribute('data-filtro');
+
+                if (filtro === 'todos') {
+                    renderizarProductos(productosCafe); 
+                } else {
+                    const productosFiltrados = productosCafe.filter(p => p.categoria === filtro);
+                    renderizarProductos(productosFiltrados); 
+                }
+            });
+        });
+
+        // === INICIALIZACIÓN ===
+        renderizarProductos(productosCafe);
+
+        // === MODO OSCURO (TOGGLE) ===
+        const btnDarkMode = document.getElementById('btn-dark-mode');
+        const iconoDarkMode = btnDarkMode.querySelector('i');
+
+        btnDarkMode.addEventListener('click', function() {
+            document.body.classList.toggle('modo-oscuro');
+
+            if (document.body.classList.contains('modo-oscuro')) {
+                iconoDarkMode.classList.remove('bi-moon-fill');
+                iconoDarkMode.classList.add('bi-sun-fill');
+                iconoDarkMode.style.color = '#F9F6F0'; 
+            } else {
+                iconoDarkMode.classList.remove('bi-sun-fill');
+                iconoDarkMode.classList.add('bi-moon-fill');
+                iconoDarkMode.style.color = '#2C1E16';
+            }
+        });
+    </script>
+    
+    <!--CONTACTO VIA WHATSAPP-->
+    <a href="https://wa.me(????)?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20hacer%20un%20pedido."
+        class="btn-whatsapp" target="_blank">
+        <i class="bi bi-whatsapp fs-2"></i>
+    </a>
+    <!--PIE DE PAGINA-->
+    <footer class="py-5" style="background-color: #1A120B; color: #F9F6F0;">
+        <div class="container text-center">
+
+            <a class="fuente-elegante fs-2 d-block mb-4 text-decoration-none" href="#" style="color: #F9F6F0;">
+                Café <span class="texto-dorado fst-italic">Algrano</span>
+            </a>
+
+            <div class="d-flex justify-content-center gap-4 mb-4" style="font-size: 0.9rem;">
+                <a href="#menu-platillos" class="text-white-50 text-decoration-none text-uppercase fw-bold">Menú</a>
+                <a href="#historia" class="text-white-50 text-decoration-none text-uppercase fw-bold">Historia</a>
+                <a href="#contacto" class="text-white-50 text-decoration-none text-uppercase fw-bold">Contacto</a>
+            </div>
+
+            <p class="mb-0 text-white-50" style="font-size: 0.85rem;">
+                &copy; 2026 Café Algrano. Todos los derechos reservados.
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>

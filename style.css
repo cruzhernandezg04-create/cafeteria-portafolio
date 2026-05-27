@@ -1,0 +1,85 @@
+body {
+    background-color: #F9F6F0;
+    font-family: Arial, sans-serif;
+    color: #2C1E16;
+}
+
+h1, h2, h3, h4, h5, h6, .fuente-elegante{
+    font-family: 'Playfair Display', serif;
+}
+
+.texto-dorado{
+    color: #b88655;
+}
+/* Esto hace que el salto entre secciones sea un deslizamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+/* Efecto Hover para las tarjetas del menú */
+.card-producto-jocho .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card-producto-jocho:hover .card {
+    transform: translateY(-8px); /* Levanta la tarjeta */
+    box-shadow: 0 10px 20px rgba(44, 30, 22, 0.1) !important; /* Sombra más profunda */
+}
+/* Estilos del Botón de WhatsApp Flotante */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px; /* Separación desde abajo */
+    right: 30px;  /* Separación desde la derecha */
+    background-color: #25D366; /* Verde oficial de WhatsApp */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Lo hace un círculo perfecto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que siempre esté por encima de todo */
+    transition: transform 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1); /* Se hace un poquito más grande al pasar el mouse */
+}
+/* ==========================================
+   MODO OSCURO
+   ========================================== */
+body.modo-oscuro {
+    background-color: #120C08 !important; /* Un café casi negro */
+}
+
+/* Cambia las secciones claras a oscuras */
+body.modo-oscuro section[style*="#F9F6F0"], 
+body.modo-oscuro footer[style*="#F9F6F0"] {
+    background-color: #120C08 !important;
+    color: #EFE8DF !important;
+}
+
+/* Oscurece las tarjetas blancas y los fondos crema de los platillos */
+body.modo-oscuro .bg-white,
+body.modo-oscuro .card {
+    background-color: #1A120B !important;
+}
+
+body.modo-oscuro .card-producto-jocho .d-flex[style*="#EFE8DF"] {
+    background-color: #261B12 !important;
+}
+
+/* Aclara los textos oscuros para que se puedan leer */
+body.modo-oscuro p[style*="#5A4A3D"],
+body.modo-oscuro h2,
+body.modo-oscuro h4,
+body.modo-oscuro label {
+    color: #D3C5B7 !important;
+}
+
+/* Ajuste del formulario en modo oscuro */
+body.modo-oscuro .form-control {
+    color: white !important;
+    border-bottom-color: #B88655 !important;
+}
