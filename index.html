@@ -435,19 +435,18 @@
                 iconoDarkMode.style.color = '#2C1E16';
             }
 
-            // === CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE ===
-            const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
-            const menuNavegacion = document.getElementById('menuNavegacion');
+           // === CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE (MÉTODO INFALIBLE) ===
+        const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
+        const menuNavegacion = document.getElementById('menuNavegacion');
+        const botonMenu = document.querySelector('.navbar-toggler'); // "Agarramos" el botón de la hamburguesa
 
-            enlacesMenu.forEach(enlace => {
-                enlace.addEventListener('click', () => {
-                    // Verificamos si el menú está abierto (Bootstrap le pone la clase 'show')
-                    if (menuNavegacion.classList.contains('show')) {
-                        // Usamos la función interna de Bootstrap para ocultarlo suavemente
-                        const menuColapsado = bootstrap.Collapse.getOrCreateInstance(menuNavegacion);
-                        menuColapsado.hide();
-                    }
-                });
+        enlacesMenu.forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                // Si el menú de navegación está abierto (tiene la clase 'show')
+                if (menuNavegacion.classList.contains('show')) {
+                    // Simulamos un clic automático en el botón para que se cierre
+                    botonMenu.click();
+                }
             });
         });
     </script>
