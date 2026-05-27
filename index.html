@@ -435,7 +435,22 @@
                 iconoDarkMode.style.color = '#2C1E16';
             }
         });
-    </script>
+
+        // === CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE ===
+        const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
+        const menuNavegacion = document.getElementById('menuNavegacion');
+
+            enlacesMenu.forEach(enlace => {
+                enlace.addEventListener('click', () => {
+                if (menuNavegacion.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(menuNavegacion);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+            }
+        });
+    });
+</script>
     
     <!--CONTACTO VIA WHATSAPP-->
     <a href="https://wa.me(????)?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20hacer%20un%20pedido."
