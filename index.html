@@ -416,40 +416,38 @@
         });
 
         // === INICIALIZACIÓN ===
-        renderizarProductos(productosCafe);
+renderizarProductos(productosCafe);
 
-             // === MODO OSCURO (TOGGLE) ===
-        const btnDarkMode = document.getElementById('btn-dark-mode');
-        const iconoDarkMode = btnDarkMode.querySelector('i');
+// === MODO OSCURO ===
+const btnDarkMode = document.getElementById('btn-dark-mode');
+const iconoDarkMode = btnDarkMode.querySelector('i');
 
-        btnDarkMode.addEventListener('click', function () {
-            document.body.classList.toggle('modo-oscuro');
+btnDarkMode.addEventListener('click', function () {
+    document.body.classList.toggle('modo-oscuro');
 
-            if (document.body.classList.contains('modo-oscuro')) {
-                iconoDarkMode.classList.remove('bi-moon-fill');
-                iconoDarkMode.classList.add('bi-sun-fill');
-                iconoDarkMode.style.color = '#F9F6F0';
-            } else {
-                iconoDarkMode.classList.remove('bi-sun-fill');
-                iconoDarkMode.classList.add('bi-moon-fill');
-                iconoDarkMode.style.color = '#2C1E16';
-            }
+    if (document.body.classList.contains('modo-oscuro')) {
+        iconoDarkMode.classList.remove('bi-moon-fill');
+        iconoDarkMode.classList.add('bi-sun-fill');
+        iconoDarkMode.style.color = '#F9F6F0';
+    } else {
+        iconoDarkMode.classList.remove('bi-sun-fill');
+        iconoDarkMode.classList.add('bi-moon-fill');
+        iconoDarkMode.style.color = '#2C1E16';
+    }
+}); 
 
-           // === CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE (MÉTODO INFALIBLE) ===
-        const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
-        const menuNavegacion = document.getElementById('menuNavegacion');
-        const botonMenu = document.querySelector('.navbar-toggler'); // "Agarramos" el botón de la hamburguesa
+// === CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE ===
+const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
+const menuNavegacion = document.getElementById('menuNavegacion');
+const botonMenu = document.querySelector('.navbar-toggler');
 
-        enlacesMenu.forEach(enlace => {
-            enlace.addEventListener('click', () => {
-                // Si el menú de navegación está abierto (tiene la clase 'show')
-                if (menuNavegacion.classList.contains('show')) {
-                    // Simulamos un clic automático en el botón para que se cierre
-                    botonMenu.click();
-                }
-            });
-        });
-    </script>
+enlacesMenu.forEach(enlace => {
+    enlace.addEventListener('click', () => {
+        if (menuNavegacion.classList.contains('show')) {
+            botonMenu.click();
+        }
+    });
+});
     
     <!--CONTACTO VIA WHATSAPP-->
     <a href="https://wa.me(????)?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20hacer%20un%20pedido."
