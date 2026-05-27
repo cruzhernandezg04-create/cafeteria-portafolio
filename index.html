@@ -145,7 +145,7 @@
 
             <div class="text-center mb-5">
                 <p class="texto-dorado fw-bold mb-3" style="letter-spacing: 2px; font-size: 0.85rem;">
-                    — LO QUE OFRECEMOS — 
+                    — LO QUE OFRECEMOS —
                 </p>
                 <h2 class="fuente-elegante display-5 fw-bold mb-4">
                     Nuestro <span class="texto-dorado fst-italic">Menú</span>
@@ -356,7 +356,7 @@
 
         // === FUNCIÓN PARA "DIBUJAR" LAS TARJETAS ===
         function renderizarProductos(datos) {
-            
+
             contenedor.innerHTML = '';
 
             if (datos.length === 0) {
@@ -371,7 +371,7 @@
 
                 // Crea la columna y la tarjeta
                 const columna = document.createElement('div');
-                columna.className = 'col-12 col-md-6 col-lg-4 card-producto-jocho'; 
+                columna.className = 'col-12 col-md-6 col-lg-4 card-producto-jocho';
 
                 columna.innerHTML = `
                     <div class="card h-100 border-0 shadow-sm" style="border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
@@ -407,10 +407,10 @@
                 const filtro = this.getAttribute('data-filtro');
 
                 if (filtro === 'todos') {
-                    renderizarProductos(productosCafe); 
+                    renderizarProductos(productosCafe);
                 } else {
                     const productosFiltrados = productosCafe.filter(p => p.categoria === filtro);
-                    renderizarProductos(productosFiltrados); 
+                    renderizarProductos(productosFiltrados);
                 }
             });
         });
@@ -422,13 +422,13 @@
         const btnDarkMode = document.getElementById('btn-dark-mode');
         const iconoDarkMode = btnDarkMode.querySelector('i');
 
-        btnDarkMode.addEventListener('click', function() {
+        btnDarkMode.addEventListener('click', function () {
             document.body.classList.toggle('modo-oscuro');
 
             if (document.body.classList.contains('modo-oscuro')) {
                 iconoDarkMode.classList.remove('bi-moon-fill');
                 iconoDarkMode.classList.add('bi-sun-fill');
-                iconoDarkMode.style.color = '#F9F6F0'; 
+                iconoDarkMode.style.color = '#F9F6F0';
             } else {
                 iconoDarkMode.classList.remove('bi-sun-fill');
                 iconoDarkMode.classList.add('bi-moon-fill');
@@ -440,18 +440,15 @@
         const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
         const menuNavegacion = document.getElementById('menuNavegacion');
 
-            enlacesMenu.forEach(enlace => {
-                enlace.addEventListener('click', () => {
+        enlacesMenu.forEach(enlace => {
+            enlace.addEventListener('click', () => {
                 if (menuNavegacion.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(menuNavegacion);
-                if (bsCollapse) {
-                    bsCollapse.hide();
+                    bootstrap.Collapse.getOrCreateInstance(menuNavegacion).hide();
                 }
-            }
+            });
         });
-    });
-</script>
-    
+    </script>
+
     <!--CONTACTO VIA WHATSAPP-->
     <a href="https://wa.me(????)?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20hacer%20un%20pedido."
         class="btn-whatsapp" target="_blank">
