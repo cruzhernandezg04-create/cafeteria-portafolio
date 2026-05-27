@@ -21,34 +21,32 @@ html {
 }
 
 .card-producto-jocho:hover .card {
-    transform: translateY(-8px); /* Levanta la tarjeta */
-    box-shadow: 0 10px 20px rgba(44, 30, 22, 0.1) !important; /* Sombra más profunda */
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(44, 30, 22, 0.1) !important; 
 }
-/* Estilos del Botón de WhatsApp Flotante */
+/* Estilos del Botón de WhatsApp  */
 .btn-whatsapp {
     position: fixed;
-    bottom: 30px; /* Separación desde abajo */
-    right: 30px;  /* Separación desde la derecha */
-    background-color: #25D366; /* Verde oficial de WhatsApp */
+    bottom: 30px;
+    right: 30px; 
+    background-color: #25D366; 
     color: white;
     width: 60px;
     height: 60px;
-    border-radius: 50%; /* Lo hace un círculo perfecto */
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Asegura que siempre esté por encima de todo */
+    z-index: 1000; 
     transition: transform 0.3s ease;
 }
 
 .btn-whatsapp:hover {
-    transform: scale(1.1); /* Se hace un poquito más grande al pasar el mouse */
+    transform: scale(1.1); 
 }
-/* ==========================================
-   MODO OSCURO
-   ========================================== */
+
 body.modo-oscuro {
     background-color: #120C08 !important; /* Un café casi negro */
 }
