@@ -145,7 +145,7 @@
 
             <div class="text-center mb-5">
                 <p class="texto-dorado fw-bold mb-3" style="letter-spacing: 2px; font-size: 0.85rem;">
-                    — LO QUE OFRECEMOS
+                    — LO QUE OFRECEMOS — 
                 </p>
                 <h2 class="fuente-elegante display-5 fw-bold mb-4">
                     Nuestro <span class="texto-dorado fst-italic">Menú</span>
@@ -416,38 +416,26 @@
         });
 
         // === INICIALIZACIÓN ===
-renderizarProductos(productosCafe);
+        renderizarProductos(productosCafe);
 
-// === MODO OSCURO ===
-const btnDarkMode = document.getElementById('btn-dark-mode');
-const iconoDarkMode = btnDarkMode.querySelector('i');
+        // === MODO OSCURO (TOGGLE) ===
+        const btnDarkMode = document.getElementById('btn-dark-mode');
+        const iconoDarkMode = btnDarkMode.querySelector('i');
 
-btnDarkMode.addEventListener('click', function () {
-    document.body.classList.toggle('modo-oscuro');
+        btnDarkMode.addEventListener('click', function() {
+            document.body.classList.toggle('modo-oscuro');
 
-    if (document.body.classList.contains('modo-oscuro')) {
-        iconoDarkMode.classList.remove('bi-moon-fill');
-        iconoDarkMode.classList.add('bi-sun-fill');
-        iconoDarkMode.style.color = '#F9F6F0';
-    } else {
-        iconoDarkMode.classList.remove('bi-sun-fill');
-        iconoDarkMode.classList.add('bi-moon-fill');
-        iconoDarkMode.style.color = '#2C1E16';
-    }
-}); 
-
-// === CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE ===
-const enlacesMenu = document.querySelectorAll('.nav-item .nav-link');
-const menuNavegacion = document.getElementById('menuNavegacion');
-const botonMenu = document.querySelector('.navbar-toggler');
-
-enlacesMenu.forEach(enlace => {
-    enlace.addEventListener('click', () => {
-        if (menuNavegacion.classList.contains('show')) {
-            botonMenu.click();
-        }
-    });
-});
+            if (document.body.classList.contains('modo-oscuro')) {
+                iconoDarkMode.classList.remove('bi-moon-fill');
+                iconoDarkMode.classList.add('bi-sun-fill');
+                iconoDarkMode.style.color = '#F9F6F0'; 
+            } else {
+                iconoDarkMode.classList.remove('bi-sun-fill');
+                iconoDarkMode.classList.add('bi-moon-fill');
+                iconoDarkMode.style.color = '#2C1E16';
+            }
+        });
+    </script>
     
     <!--CONTACTO VIA WHATSAPP-->
     <a href="https://wa.me(????)?text=Hola,%20vi%20su%20página%20web%20y%20me%20gustaría%20hacer%20un%20pedido."
